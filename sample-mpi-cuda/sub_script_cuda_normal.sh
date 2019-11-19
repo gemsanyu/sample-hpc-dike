@@ -6,6 +6,7 @@
 #SBATCH --nodes=2
 #SBATCH --tasks-per-node=2
 #SBATCH --time=01:00
+#SBATCH --nodelist=komputasi08,komputasi07
 
-srun --mpi=pmix  jacobi_cuda_normal__mpi -t 2 2
+srun --mpi=pmix -n 4 jacobi_cuda_normal_mpi -t 2 2
 
