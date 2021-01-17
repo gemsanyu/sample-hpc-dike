@@ -6,4 +6,5 @@
 #
 #SBATCH --time=05:00
 
+source ~/sample-env/bin/activate
 srun python3 conv.py

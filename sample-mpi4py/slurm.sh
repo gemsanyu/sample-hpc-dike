@@ -6,4 +6,6 @@
 #SBATCH --nodes=2
 #SBATCH --time=02:00
 #SBATCH --tasks-per-node=5
+
+source ~/sample-env/bin/activate
 mpirun -n 5 python3 helloworld.py
